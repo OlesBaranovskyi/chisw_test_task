@@ -1,0 +1,4 @@
+C:/Users/User/Documents/first_cmake/temp/CMakeFiles/allstatlib.dir
+C:/Users/User/Documents/first_cmake/temp/CMakeFiles/find_dep.dir
+C:/Users/User/Documents/first_cmake/temp/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/Documents/first_cmake/temp/CMakeFiles/ZERO_CHECK.dir
