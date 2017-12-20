@@ -4,9 +4,9 @@ pair<string,list<string>> find_dependencies(string name_file)
 	list<string> includes_files;
 	try {
 		ostringstream strfile();
-		ifstream myfile(name_file, ios::in); // открываем файл для чтения
+		ifstream myfile(name_file, ios::in); // open file for reading
 		if (!myfile.is_open()) { throw ifstream::failure::exception("error open file"); }
-		stringstream buffer;   // строковый поток для преобразавания содержимого файла в строку
+		stringstream buffer;   // stringstream for convert content file to string
 		buffer << myfile.rdbuf();
 		string flstr = buffer.str();
 		regex words_regex("^#include.*");
