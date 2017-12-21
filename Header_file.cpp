@@ -1,7 +1,7 @@
 #include "Header_file.h"
 ostream& operator << (ostream& os, Header_file h_f)
 {
-	h_f.name_file=="file not found"?os<< h_f.name_file: os << h_f.name_file << "    have  next absolute path  " << h_f.path_to_file << endl;
+	h_f.name_file=="file not found  " ? os<< h_f.name_file : os << h_f.name_file << "    have  next absolute path  " << h_f.path_to_file << endl;
 	
 	
 	if (h_f.order.count("includes")) {

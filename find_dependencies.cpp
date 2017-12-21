@@ -28,6 +28,12 @@ pair<string,list<string>> find_dependencies(string name_file)
 		list<string> tmp_errors{ ostr.what() };
 		return{ "errors",tmp_errors };
 	}
+	catch (const out_of_range &e)
+	{
+		list<string> tmp_errors{ e.what() };
+		return{ "errors",tmp_errors };
+
+	}
 	
 
 	return  { "includes", includes_files };
